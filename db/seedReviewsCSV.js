@@ -21,7 +21,7 @@ function writeTenMillionUsers(writer, encoding, callback) {
         else {
             productID +=1;
         }
-        var numPhotos = faker.random.number({ min: 0, max: 3 });
+        var numPhotos = faker.random.number({ min: 0, max: 2 });
         var rawPhotos = [];
 
         for (var k = 0; k < numPhotos; k++) {
@@ -37,7 +37,7 @@ function writeTenMillionUsers(writer, encoding, callback) {
         var stars = faker.random.number({ min: 1, max: 5 });
         var date = JSON.stringify(faker.date.past(1));
         date = date.slice(1,date.length-1)
-        var reviewText = faker.hacker.phrase() + ' ' + faker.lorem.sentences(faker.random.number({ min: 1, max: 2 }));
+        var reviewText = faker.hacker.phrase() + ' ' + faker.lorem.sentences(1);
         var recommended = faker.random.boolean();
         var yes = faker.random.number({ min: 0, max: 20 });
         var no = faker.random.number({ min: 0, max: 20 });
