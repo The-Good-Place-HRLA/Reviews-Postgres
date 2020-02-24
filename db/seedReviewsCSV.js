@@ -5,7 +5,7 @@ const _ = require('lodash');
 const allPhotos = require('./photos');
 writeUsers.write('id | productID | username | title | stars | date | reviewText | recommended | photos | yes | no\n', 'utf8');
 function writeTenMillionUsers(writer, encoding, callback) {
-    let i = 30000000;
+    let i = 25000000;
     let id = 0;
     let productID = 0;
     function write() {
