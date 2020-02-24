@@ -1,0 +1,7 @@
+{
+    "host": "localhost",
+    "user": "jtnparker",
+    "pw": "terra",
+    "db": "testing",
+    "port": "5432"
+    }

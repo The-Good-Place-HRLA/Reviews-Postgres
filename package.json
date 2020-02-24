@@ -1,0 +1,53 @@
+{
+  "name": "reviews-service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "seed": "node db/seed.js",
+    "build": "webpack -d --watch",
+    "start": "nodemon server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/The-Good-Place-HRLA/Reviews-Postgres.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/The-Good-Place-HRLA/Reviews-Postgres/issues"
+  },
+  "homepage": "https://github.com/The-Good-Place-HRLA/Reviews-Postgres#readme",
+  "dependencies": {
+    "@babel/core": "^7.8.3",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/preset-env": "^7.8.3",
+    "@babel/preset-react": "^7.8.3",
+    "axios": "^0.19.2",
+    "babel-loader": "^8.0.6",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "faker": "^4.1.0",
+    "fast-csv": "4.0.2",
+    "lodash": "^4.17.15",
+    "moment": "^2.24.0",
+    "mongo": "^0.1.0",
+    "mongodb": "^3.5.3",
+    "mongoose": "^5.8.10",
+    "morgan": "^1.9.1",
+    "newrelic": "^6.4.1",
+    "nodemon": "^2.0.2",
+    "pg": "7.18.1",
+    "pg-copy-streams": "2.2.2",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-fontawesome": "^1.7.1",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
+  },
+  "devDependencies": {
+    "jest": "^25.1.0"
+  }
+}

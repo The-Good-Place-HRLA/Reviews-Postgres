@@ -1,0 +1,24 @@
+config:
+  target: 'http://localhost:6969'
+  phases:
+    - duration: 60
+      arrivalRate: 400
+  variables:
+    productID: 
+        - "9990000"
+        - "9990001"
+        - "9990002"
+        - "9990003"
+        - "9990004"
+        - "9990005"
+        - "9990006"
+        - "9990007"
+        - "9990008"
+        - "9990009"
+  defaults:
+    headers:
+scenarios:
+  - flow:
+    - get:
+        url: "/api/{{productID}}"
+     
